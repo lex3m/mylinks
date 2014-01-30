@@ -1971,6 +1971,7 @@ nav{
 
     .back-button{
         padding-right: 35px;
+        margin-right: 5px;
         background-position: right center;
         color: #000000;
         display: block;

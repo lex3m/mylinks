@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title><?php echo CHtml::encode(Yii::app()->name); ?></title>
+    <title><?php echo CHtml::encode($this->pageTitle); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Добавить сайт в визуальные закладки, визуалльные закладки, сохранить сайт, сохранить ссылку">
     <meta name="author" content="lexxsumy@gmail.com">
@@ -24,7 +24,7 @@
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/custom.css" rel="stylesheet">
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/custom_colors.css" rel="stylesheet">
 
-<!--	<title>--><?php //echo CHtml::encode($this->pageTitle); ?><!--</title>-->
+
 </head>
 
 <body>
@@ -46,7 +46,7 @@
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/tinyscrollbar.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/custom.js"></script>
 <!--[if lte IE 9]>
-<script src="js/respond.min.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/respond.min.js"></script>
 <![endif]-->
 
 </body>
